@@ -90,7 +90,7 @@
                 <div class="site-heading">
                     <h1>Kamome</h1>
                     <hr class="small">
-                    <span class="subheading">博客页面</span>
+                    <span class="subheading">不想努力的菜鸟</span>
                 </div>
             </div>
         </div>
@@ -120,20 +120,14 @@
     <div class="sprite-bulin"></div>
 </div>
 
-
-<img src='img/Azur_scared.gif' id="Azur_scared">
-<script type="text/javascript">
-	$(function () {
-		setInterval(function () {
-			$("#Azur_scared").attr('src', 'img/Azur_scared_fixed.gif');
-		}, 3200);//自动刷新
-	})
-
-</script>
+<div id="Azur_scared"></div>
 
 <style>
 	#Azur_scared {
+        height: 120px;
+        width: 105px;
 		bottom: 100;
+        background-image: url('img/Azur_scared_fixed.gif');
 /* 		position: fixed; */
 	}
 </style>
@@ -194,7 +188,7 @@
 			transform: rotateY(0deg)
 		}
 		100% {
-			top: -250px;
+			top: -200px;
 			left: 0%;
 		}
 	}
@@ -211,23 +205,23 @@
 
 	@keyframes fly2 {
 		0% {
-			top: -160px;
+			top: -80px;
 			left: 0%;
 		}
 		49% {
-			top: -160px;
+			top: -80px;
 			left: 85%;
 		}
 		50% {
-			top: -160px;
+			top: -80px;
 			left: 85%;
 		}
 		99% {
-			top: -160px;
+			top: -80px;
 			left: 0%;
 		}
 		100% {
-			top: -160px;
+			top: -80px;
 			left: 0%;
 		}
 	}

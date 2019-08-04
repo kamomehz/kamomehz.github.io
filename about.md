@@ -27,7 +27,7 @@ UI使用的uikit模板，并从碧蓝航线 [joyme.wiki](http://wiki.joyme.com/b
 这次依旧是Github Page + 阿里云的域名服务的组合。构架直接Fork了别人的JekyII模板。
 闭门造车不可取，尤其是我这种脑子不灵光的...
 
-教程:[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)
+网上的较详细教程:[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)
 
 
 
