@@ -4,7 +4,7 @@ header-img: "img/green.jpg"
 tagline: "cn"  
 description: "不想努力的菜鸟"  # 一句话描述你的博客
 baseurl: ""
-url: "http://cnfeat"  # 此处填写你的博客地址 
+url: "http://kamome.tech"  # 此处填写你的博客地址 
 
 # About/contact
 owner: 
@@ -18,10 +18,11 @@ favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
 
 douban_username:  # 你的豆瓣id
 twitter_username: 
-github_username: 
+github_username: kamomehz
 facebook_username: 
 weibo_username: 
-zhihu_username: 
+zhihu_username: 东京死宅
+bilibili_username: 残念の瓶子
 
 # Build settings  
 # use Github Flavored Markdown !important  
