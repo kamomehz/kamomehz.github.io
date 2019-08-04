@@ -40,6 +40,7 @@ description: "博客页面"
 </ul>
 {% endif %}
 
+
 <div class="message-fly">
     <h2 id="bulin-message"></h2>
 </div>
@@ -47,24 +48,18 @@ description: "博客页面"
     <div class="sprite-bulin"></div>
 </div>
 
-
-<img src='img/Azur_scared.gif' id="Azur_scared">
-<script type="text/javascript">
-	$(function () {
-		setInterval(function () {
-			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
-		}, 3200);//自动刷新
-	})
-
-</script>
-
+<div class="scare"></div>
 <style>
-	#Azur_scared {
-		bottom: 100;
-/* 		position: fixed; */
-	}
-</style>
-
+    .scare {
+        position: fixed;
+        top: 100px;
+        left: 0px;
+        width: 105px;
+        height: 120px;
+        display: block;
+        background:url('img/Azur_scared_fixed.gif');
+    }
+<style>
 
 <style>
 	.sprite-bulin {
