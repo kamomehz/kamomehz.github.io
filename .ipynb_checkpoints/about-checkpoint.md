@@ -21,13 +21,13 @@ UI使用的uikit模板，并从碧蓝航线 [joyme.wiki](http://wiki.joyme.com/b
 ## 今年夏天
 
 
-如愿合格了东工大的大学院，想要做一些改变，无奈身体欠佳，于是宅在图书馆捣鼓一下这个博客（？）
+如愿合格了大学院，想要做一些改变，无奈身体欠佳，于是宅在图书馆捣鼓一下这个博客（？）
 
 
 这次依旧是Github Page + 阿里云的域名服务的组合。构架直接Fork了别人的JekyII模板。
 闭门造车不可取，尤其是我这种脑子不灵光的...
 
-
+教程:[如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)
 
 
 
