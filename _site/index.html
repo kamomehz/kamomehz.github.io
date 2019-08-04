@@ -90,7 +90,7 @@
                 <div class="site-heading">
                     <h1>Kamome</h1>
                     <hr class="small">
-                    <span class="subheading">不想努力的菜鸟</span>
+                    <span class="subheading">博客页面</span>
                 </div>
             </div>
         </div>
@@ -113,7 +113,6 @@
 <!-- Pager -->
 
 
-
 <div class="message-fly">
     <h2 id="bulin-message"></h2>
 </div>
@@ -121,18 +120,24 @@
     <div class="sprite-bulin"></div>
 </div>
 
-<div class="scare"></div>
+
+<img src='img/Azur_scared_fixed.gif' id="Azur_scared">
+<script type="text/javascript">
+	$(function () {
+		setInterval(function () {
+			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
+		}, 3200);//自动刷新
+	})
+
+</script>
+
 <style>
-    .scare {
-        position: fixed;
-        top: 100px;
-        left: 0px;
-        width: 105px;
-        height: 120px;
-        display: block;
-        background:url('img/Azur_scared_fixed.gif');
-    }
-<style>
+	#Azur_scared {
+		bottom: 100;
+		position: fixed;
+	}
+</style>
+
 
 <style>
 	.sprite-bulin {

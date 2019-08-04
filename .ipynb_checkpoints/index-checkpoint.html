@@ -1,6 +1,6 @@
 ---
 layout: page
-description: "不想努力的菜鸟"
+description: "博客页面"
 ---
 
 {% for post in paginator.posts %}
@@ -40,7 +40,6 @@ description: "不想努力的菜鸟"
 </ul>
 {% endif %}
 
-
 <div class="message-fly">
     <h2 id="bulin-message"></h2>
 </div>
@@ -48,18 +47,24 @@ description: "不想努力的菜鸟"
     <div class="sprite-bulin"></div>
 </div>
 
-<div class="scare"></div>
+
+<img src='img/Azur_scared_fixed.gif' id="Azur_scared">
+<script type="text/javascript">
+	$(function () {
+		setInterval(function () {
+			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
+		}, 3200);//自动刷新
+	})
+
+</script>
+
 <style>
-    .scare {
-        position: fixed;
-        top: 100px;
-        left: 0px;
-        width: 105px;
-        height: 120px;
-        display: block;
-        background:url('img/Azur_scared_fixed.gif');
-    }
-<style>
+	#Azur_scared {
+		bottom: 100;
+		position: fixed;
+	}
+</style>
+
 
 <style>
 	.sprite-bulin {
