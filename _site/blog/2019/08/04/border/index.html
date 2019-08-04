@@ -6,11 +6,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="这是我的博客">
+    <meta name="description" content="不想努力的菜鸟">
 
-    <title>这是一篇博客文章模板 - 博客名字</title>
+    <title>图像边缘检测 - Kamome</title>
 
-    <link rel="canonical" href="http://localhost:4000/blog/2015/03/02/how-to-write-Copy1/">
+    <link rel="canonical" href="http://localhost:4000/blog/2019/08/04/border/">
 
     <!-- Icons -->
   <link rel="shortcut icon" href="img/favicon.ico">
@@ -56,7 +56,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">博客名字</a>
+            <a class="navbar-brand" href="/">Kamome</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -103,14 +103,12 @@
                 <div class="post-heading">
                     <div class="Tags">
                         
-                        <a class="tag" href="/Tags/#标签一" title="标签一">标签一</a>
-                        
-                        <a class="tag" href="/Tags/#标签二" title="标签二">标签二</a>
+                        <a class="tag" href="/Tags/#好玩的" title="好玩的">好玩的</a>
                         
                     </div>
-                    <h1>这是一篇博客文章模板</h1>
+                    <h1>图像边缘检测</h1>
                     
-                    <span class="meta">Posted by 你的名字 on March 2, 2015</span>
+                    <span class="meta">Posted by Hz on August 4, 2019</span>
                 </div>
             </div>
         </div>
@@ -126,7 +124,16 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 post-container">
 
-                <p>这里是博客正文。</p>
+                <p>初始图像
+<img src="/img2019/miyuki0.png" width="300" height="424" alt="miyuki" /></p>
+
+<p>首先将RGB图像转成灰度值（下图左）</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grayScale = ( (0.3 * R) + (0.59 * G) + (0.11 * B) )
+</code></pre></div></div>
+<p>尝试直接用每个点的灰度值减去其左侧点的灰度值，效果并不理想（下图中）
+对灰度图像施加高斯模糊（下图右）</p>
+
+<p><img src="/img2019/miyuki1.png" alt="1" /></p>
 
 
 
@@ -134,10 +141,10 @@
 
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/blog/2019/08/04/blabla/" data-toggle="tooltip" data-placement="top" title="这是一篇博客文章模板">Next Post &rarr;</a>
+                    <li class="previous">
+                        <a href="/blog/2019/08/04/blabla/" data-toggle="tooltip" data-placement="top" title="最近在学的东西">&larr; Previous Post</a>
                     </li>
+                    
                     
                 </ul>
 
@@ -155,12 +162,14 @@
                 </style>
 
                 <div class="ds-share"
-                    data-thread-key="/blog/2015/03/02/how-to-write-Copy1" data-title="这是一篇博客文章模板"
+                    data-thread-key="/blog/2019/08/04/border" data-title="图像边缘检测"
                     data-images="http://localhost:4000/img/green.jpg"
-                    data-content="这里是博客正文。
+                    data-content="初始图像
 
- | Microdust:Azeril's blog"
-                    data-url="http://localhost:4000/blog/2015/03/02/how-to-write-Copy1/">
+
+首先将RGB图像转成灰度值（下图左）
+grayScale = ( (0.3 * R) + (0.59 * G) + (0.11 * B) )... | Microdust:Azeril's blog"
+                    data-url="http://localhost:4000/blog/2019/08/04/border/">
                     <div class="ds-share-inline">
                       <ul  class="ds-share-icons-16">
 
@@ -179,7 +188,7 @@
 
                 <!-- 多说评论框 start -->
                 <div class="comment">
-                    <div class="ds-thread" data-thread-key="/blog/2015/03/02/how-to-write-Copy1" data-title="这是一篇博客文章模板" data-url="http://localhost:4000/blog/2015/03/02/how-to-write-Copy1/"></div>
+                    <div class="ds-thread" data-thread-key="/blog/2019/08/04/border" data-title="图像边缘检测" data-url="http://localhost:4000/blog/2019/08/04/border/"></div>
                 </div>
                 <!-- 多说评论框 end -->
             </div>
@@ -257,6 +266,15 @@ var duoshuoQuery = {short_name:"cnfeat"};
                     
 
                     
+                    <li>
+                        <a href="https://github.com/kamomehz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
                     
                     <!--
                     
@@ -266,6 +284,15 @@ var duoshuoQuery = {short_name:"cnfeat"};
                     
                     -->
 
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/he-zuo-39">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
                     
                     <!--
                     
@@ -273,7 +300,7 @@ var duoshuoQuery = {short_name:"cnfeat"};
 
                 </ul>
                 <p class="copyright text-muted">
-                &copy; 2019 作者名字 ❖ Powered by Jekyll.
+                &copy; 2019 hz ❖ Powered by Jekyll.
                 </p>
             </div>
         </div>

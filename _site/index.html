@@ -6,9 +6,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="这是我的博客">
+    <meta name="description" content="不想努力的菜鸟">
 
-    <title>博客名字</title>
+    <title>Kamome</title>
 
     <link rel="canonical" href="http://localhost:4000/">
 
@@ -56,7 +56,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">博客名字</a>
+            <a class="navbar-brand" href="/">Kamome</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,7 +96,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="site-heading">
-                    <h1>博客名字</h1>
+                    <h1>Kamome</h1>
                     <hr class="small">
                     <span class="subheading">博客页面</span>
                 </div>
@@ -119,6 +119,132 @@
 			
 
 <!-- Pager -->
+
+
+<div class="message-fly">
+    <h2 id="bulin-message"></h2>
+</div>
+<div class="bulin-fly" onclick="fuckit()">
+    <div class="sprite-bulin"></div>
+</div>
+
+<script type="text/javascript">
+	$(function () {
+		setInterval(function () {
+			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
+		}, 3200);//自动刷新
+	})
+
+</script>
+
+<style>
+	#Azur_scared {
+		bottom: 100;
+/* 		position: fixed; */
+	}
+</style>
+
+
+<style>
+	.sprite-bulin {
+		z-index: 1;
+		width: 130px;
+		height: 134px;
+		background-image: url(img/bulin.png);
+		background-repeat: no-repeat;
+		animation-name: bulinfly;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(7);
+
+	}
+
+	@keyframes bulinfly {
+
+		100% {
+			background-position: -910px
+		}
+
+	}
+
+	.bulin-fly {
+        position: absolute;
+		animation-duration: 14s;
+		animation-name: fly;
+		animation-iteration-count: infinite;
+		width: 130px;
+		height: 134px;
+		transition-timing-function: linear;
+	}
+
+	@keyframes fly {
+		0% {
+			top: 0px;
+			left: 0%;
+			transform: rotateY(180deg)
+		}
+		49% {
+			top: 0px;
+			left: 85%;
+			transform: rotateY(180deg)
+		}
+		50% {
+			top: 0px;
+			left: 85%;
+			transform: rotateY(0deg)
+		}
+		99% {
+			top: 0px;
+			left: 0%;
+			transform: rotateY(0deg)
+		}
+		100% {
+			top: 0px;
+			left: 0%;
+		}
+	}
+
+
+	.message-fly {
+		position: absolute;
+		animation-duration: 14s;
+		animation-name: fly2;
+		animation-iteration-count: infinite;
+		width: 150px;
+		transition-timing-function: linear;
+	}
+
+	@keyframes fly2 {
+		0% {
+			top: 160px;
+			left: 0%;
+		}
+		49% {
+			top: 160px;
+			left: 85%;
+		}
+		50% {
+			top: 160px;
+			left: 85%;
+		}
+		99% {
+			top: 160px;
+			left: 0%;
+		}
+		100% {
+			top: 160px;
+			left: 0%;
+		}
+	}
+</style>
+
+<script>
+	function fuckit() {
+		document.getElementById("bulin-message").innerHTML = "Fuck off";
+		setTimeout(function () { document.getElementById("bulin-message").innerHTML = " "; }, 3000);
+	}
+</script>
 
 
 		</div>
@@ -146,6 +272,15 @@
                     
 
                     
+                    <li>
+                        <a href="https://github.com/kamomehz">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
                     
                     <!--
                     
@@ -155,6 +290,15 @@
                     
                     -->
 
+                    
+                    <li>
+                        <a target="_blank" href="https://www.zhihu.com/people/he-zuo-39">
+                            <span class="fa-stack fa-lg">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa  fa-stack-1x fa-inverse">知</i>
+                            </span>
+                        </a>
+                    </li>
                     
                     <!--
                     
@@ -162,7 +306,7 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                &copy; 2019 作者名字 ❖ Powered by Jekyll.
+                &copy; 2019 hz ❖ Powered by Jekyll.
                 </p>
             </div>
         </div>
