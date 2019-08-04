@@ -48,11 +48,11 @@ description: "博客页面"
 </div>
 
 
-<img src='img/Azur_scared_fixed.gif' id="Azur_scared">
+<img src='img/Azur_scared.gif' id="Azur_scared">
 <script type="text/javascript">
 	$(function () {
 		setInterval(function () {
-			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
+			$("#Azur_scared").attr('src', 'img/Azur_scared_fixed.gif');
 		}, 3200);//自动刷新
 	})
 
@@ -61,7 +61,7 @@ description: "博客页面"
 <style>
 	#Azur_scared {
 		bottom: 100;
-		position: fixed;
+/* 		position: fixed; */
 	}
 </style>
 
@@ -101,27 +101,27 @@ description: "博客页面"
 
 	@keyframes fly {
 		0% {
-			top: -300px;
+			top: -200px;
 			left: 0%;
 			transform: rotateY(180deg)
 		}
 		49% {
-			top: -300px;
+			top: -200px;
 			left: 85%;
 			transform: rotateY(180deg)
 		}
 		50% {
-			top: -300px;
+			top: -200px;
 			left: 85%;
 			transform: rotateY(0deg)
 		}
 		99% {
-			top: -300px;
+			top: -200px;
 			left: 0%;
 			transform: rotateY(0deg)
 		}
 		100% {
-			top: -300px;
+			top: -250px;
 			left: 0%;
 		}
 	}
@@ -138,23 +138,23 @@ description: "博客页面"
 
 	@keyframes fly2 {
 		0% {
-			top: -260px;
+			top: -160px;
 			left: 0%;
 		}
 		49% {
-			top: -260px;
+			top: -160px;
 			left: 85%;
 		}
 		50% {
-			top: -260px;
+			top: -160px;
 			left: 85%;
 		}
 		99% {
-			top: -260px;
+			top: -160px;
 			left: 0%;
 		}
 		100% {
-			top: -260px;
+			top: -160px;
 			left: 0%;
 		}
 	}
