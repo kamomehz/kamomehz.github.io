@@ -2,7 +2,12 @@
 layout: page
 description: "博客页面"
 ---
-
+<div class="message-fly">
+    <h2 id="bulin-message"></h2>
+</div>
+<div class="bulin-fly" onclick="fuckit()">
+    <div class="sprite-bulin"></div>
+</div>
 
 {% for post in paginator.posts %}
 <div class="post-preview">
@@ -14,16 +19,6 @@ description: "博客页面"
         <h3 class="post-subtitle">
             {{ post.subtitle }}
         </h3>
-        
-        
-        <div class="message-fly">
-            <h2 id="bulin-message"></h2>
-        </div>
-        <div class="bulin-fly" onclick="fuckit()">
-            <div class="sprite-bulin"></div>
-        </div>
-        
-        
         {% endif %}
         <div class="post-content-preview">
             {{ post.content | strip_html | truncate:150 }}
@@ -92,7 +87,7 @@ description: "博客页面"
 	}
 
 	.bulin-fly {
-		position: absolute;
+        position: absolute;
 		animation-duration: 14s;
 		animation-name: fly;
 		animation-iteration-count: infinite;
@@ -103,27 +98,27 @@ description: "博客页面"
 
 	@keyframes fly {
 		0% {
-			top: 100px;
+			top: 0px;
 			left: 0%;
 			transform: rotateY(180deg)
 		}
 		49% {
-			top: 100px;
+			top: 0px;
 			left: 85%;
 			transform: rotateY(180deg)
 		}
 		50% {
-			top: 100px;
+			top: 0px;
 			left: 85%;
 			transform: rotateY(0deg)
 		}
 		99% {
-			top: 100px;
+			top: 0px;
 			left: 0%;
 			transform: rotateY(0deg)
 		}
 		100% {
-			top: 100px;
+			top: 0px;
 			left: 0%;
 		}
 	}
@@ -140,23 +135,23 @@ description: "博客页面"
 
 	@keyframes fly2 {
 		0% {
-			top: 260px;
+			top: 160px;
 			left: 0%;
 		}
 		49% {
-			top: 260px;
+			top: 160px;
 			left: 85%;
 		}
 		50% {
-			top: 260px;
+			top: 160px;
 			left: 85%;
 		}
 		99% {
-			top: 260px;
+			top: 160px;
 			left: 0%;
 		}
 		100% {
-			top: 260px;
+			top: 160px;
 			left: 0%;
 		}
 	}
