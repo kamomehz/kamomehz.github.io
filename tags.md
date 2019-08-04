@@ -4,22 +4,29 @@ title: "Tags"
 description: "估计没有用的地带"  
 header-img: "img/semantic.jpg"  
 ---
+## tag说明
+追番
+> 每一季总结几部观感尚佳的番
 
-## 本页使用方法
+ACG
+> 日常碎碎念
 
-1. 在下面选一个你喜欢的词
-2. 点击它
-3. 相关的文章会「唰」地一声跳到页面顶端
-4. 马上试试？
+生活
+> 就是生活啦
+
+好玩的
+> 学习上的总结
+
+
 
 ## 基因列表
 
 
-<div id='tag_cloud'>
+<!--<div id='tag_cloud'>
 {% for tag in site.tags %}
 <a href="#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a>
 {% endfor %}
-</div>
+</div>-->
 
 <ul class="listing">
 {% for tag in site.tags %}
