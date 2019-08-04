@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<!-- 在此处写注释-->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Kamomeの部屋</title>
+	<link rel="stylesheet" type="text/css" href="css/bilibili.css" />
+	<link rel="stylesheet" type="text/css" href="uikit/dist/css/uikit-core-rtl.min.css" />
+	<link rel="stylesheet" type="text/css" href="uikit/dist/css/uikit-core.min.css" />
+	<link rel="stylesheet" type="text/css" href="uikit/dist/css/uikit.min.css" />
+
+	<!-- <script type="text/javascript" src="jquery.js"></script> !-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bulinfly.js"></script>
+	<script type="text/javascript" src="uikit/dist/js/uikit.min.js"></script>
+	<script type="text/javascript" src="uikit/dist/js/uikit-core.min.js"></script>
+	<script type="text/javascript" src="uikit/dist/js/uikit-icons.min.js"></script>
+
+	<!--script type="text/javascript" src="uikit/js/components/sticky.min.js"></script!-->
+	<!--script type="text/javascript" src="uikit/js/uikit.min.js"></script!-->
+
+</head>
+<img src='img/Azur_scared.gif' id="Azur_scared">
+<div class="uk-cover-container">
+	<img src="img/back-min.png" alt="" uk-cover>
+	<div class="croptitle">
+		<h2 id="title">
+			Kamomeの部屋
+		</h2>
+		<!--img src="img/Azur_scared.jpg" uk-img!-->
+		<!--img width="1440" height="940" src="img/back.png" alt="title img"!-->
+	</div>
+</div>
+<style type="text/css">
+	.croptitle {
+		height: 150px;
+	}
+
+	.croptitle h2 {
+		font-size: 43px;
+		text-align: center;
+		margin: 100px 0 0 0;
+		border: 1px;
+		border-color: #AFB2C6;
+		/*border-radius: 10%;*/
+		width: 100%;
+		position: absolute;
+		background-color: hsla(50, 0%, 100%, 0.4);
+		font-family: "Meiryo UI";
+	}
+</style>
+
+
+<!--trying to use git in vscode-->
+<div class="uk-navbar-container" uk-navbar>
+	<div class="uk-navbar-center">
+		<ul class="uk-navbar-nav" uk-tab>
+			<li class="uk-active navi_topbar" id="frontpage">
+				<a href="">Front Page</a>
+			</li>
+			<li class="navi_topbar" id="work">
+				<a href="">Recent Work</a>
+			</li>
+			<li class="navi_topbar" id="photo">
+				<a href="">Photo</a>
+			</li>
+			<li class="navi_topbar" id="study">
+				<a href="">Study</a>
+			</li>
+			<li class="navi_topbar" id="diary">
+				<a href="">Diary</a>
+			</li>
+			<li class="navi_topbar" id="link">
+				<a href="">Link</a>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<style type="text/css">
+	#bodyContent .sidebar {
+		list-style-type: none;
+		margin: 0px;
+	}
+</style>
+
+
+<body>
+	<div id="bodyContent">
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+	</div>
+</body>
+
+<footer class="uk-text-center uk-margin-large">
+	<a href="#" uk-totop uk-scroll>back to top </a>
+</footer>
+
+
+
+
+
+
+<div class="uk-align-center uk-padding uk-background-muted uk-width-1-2@s">
+	<img src="http://www.reliablecounter.com/count.php?page=kamome.tech&digit=style/plain/10/&reloads=0" alt="site visitor counter html code"
+	 title="site visitor counter html code" border="0">
+	<br> 这段是测试文本Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+	magna aliqua.
+</div>
+
+
+
+<style>
+	.sprite-bulin {
+		z-index: -9;
+		width: 130px;
+		height: 134px;
+		background-image: url(img/bulin.png);
+		background-repeat: no-repeat;
+		animation-name: bulinfly;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(7);
+
+	}
+
+	@keyframes bulinfly {
+
+		100% {
+			background-position-x: -910px
+		}
+
+	}
+
+	.bulin-fly {
+		position: absolute;
+		animation-duration: 14s;
+		animation-name: fly;
+		animation-iteration-count: infinite;
+		width: 130px;
+		height: 134px;
+		transition-timing-function: linear;
+	}
+
+	@keyframes fly {
+		0% {
+			top: 100px;
+			left: 0%;
+			transform: rotateY(180deg)
+		}
+		49% {
+			top: 100px;
+			left: 85%;
+			transform: rotateY(180deg)
+		}
+		50% {
+			top: 100px;
+			left: 85%;
+			transform: rotateY(0deg)
+		}
+		99% {
+			top: 100px;
+			left: 0%;
+			transform: rotateY(0deg)
+		}
+		100% {
+			top: 100px;
+			left: 0%;
+		}
+	}
+
+
+	.message-fly {
+		position: absolute;
+		animation-duration: 14s;
+		animation-name: fly2;
+		animation-iteration-count: infinite;
+		width: 150px;
+		transition-timing-function: linear;
+	}
+
+	@keyframes fly2 {
+		0% {
+			top: 260px;
+			left: 0%;
+		}
+		49% {
+			top: 260px;
+			left: 85%;
+		}
+		50% {
+			top: 260px;
+			left: 85%;
+		}
+		99% {
+			top: 260px;
+			left: 0%;
+		}
+		100% {
+			top: 260px;
+			left: 0%;
+		}
+	}
+</style>
+
+
+<script type="text/javascript">
+	$(function () {
+		setInterval(function () {
+			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
+		}, 3200);//自动刷新
+	})
+
+	$.ajax({
+		type: "get",
+		url: "index-frontpage.html",
+		async: true
+	}).done(function (data) {
+		$("#bodyContent").html(data);
+	});
+
+	$(".navi_topbar").click(function () {
+		$.ajax({
+			type: "get",
+			url: "index-" + $(this).attr('id') + ".html",
+			async: true,
+			success: function (data) {
+				$("#bodyContent").html(data);
+			}
+		});
+	});
+
+
+</script>
+
+<style>
+	#Azur_scared {
+		bottom: 0;
+		position: fixed;
+	}
+</style>
+
+<script>
+	//style="display:none"
+	function fuckit() {
+		document.getElementById("bulin-message").innerHTML = "Fuck off";
+		setTimeout(function () { document.getElementById("bulin-message").innerHTML = " "; }, 3000);
+	}
+
+	//document.getElementsByClassName("bulin-fly").onclick = function () {}
+</script>
+
+<div class="message-fly">
+	<h2 id="bulin-message"></h2>
+</div>
+<div class="bulin-fly" onclick="fuckit()">
+	<div class="sprite-bulin"></div>
+</div>

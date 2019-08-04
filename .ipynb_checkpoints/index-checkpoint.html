@@ -39,3 +39,128 @@ description: "博客页面"
     {% endif %}
 </ul>
 {% endif %}
+
+<script type="text/javascript">
+	$(function () {
+		setInterval(function () {
+			$("#Azur_scared").attr('src', 'img/Azur_scared.gif');
+		}, 3200);//自动刷新
+	})
+
+</script>
+
+<style>
+	#Azur_scared {
+		bottom: 100;
+		position: fixed;
+	}
+</style>
+
+
+<style>
+	.sprite-bulin {
+		z-index: -9;
+		width: 130px;
+		height: 134px;
+		background-image: url(img/bulin.png);
+		background-repeat: no-repeat;
+		animation-name: bulinfly;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(7);
+
+	}
+
+	@keyframes bulinfly {
+
+		100% {
+			background-position-x: -910px
+		}
+
+	}
+
+	.bulin-fly {
+		position: absolute;
+		animation-duration: 14s;
+		animation-name: fly;
+		animation-iteration-count: infinite;
+		width: 130px;
+		height: 134px;
+		transition-timing-function: linear;
+	}
+
+	@keyframes fly {
+		0% {
+			top: 100px;
+			left: 0%;
+			transform: rotateY(180deg)
+		}
+		49% {
+			top: 100px;
+			left: 85%;
+			transform: rotateY(180deg)
+		}
+		50% {
+			top: 100px;
+			left: 85%;
+			transform: rotateY(0deg)
+		}
+		99% {
+			top: 100px;
+			left: 0%;
+			transform: rotateY(0deg)
+		}
+		100% {
+			top: 100px;
+			left: 0%;
+		}
+	}
+
+
+	.message-fly {
+		position: absolute;
+		animation-duration: 14s;
+		animation-name: fly2;
+		animation-iteration-count: infinite;
+		width: 150px;
+		transition-timing-function: linear;
+	}
+
+	@keyframes fly2 {
+		0% {
+			top: 260px;
+			left: 0%;
+		}
+		49% {
+			top: 260px;
+			left: 85%;
+		}
+		50% {
+			top: 260px;
+			left: 85%;
+		}
+		99% {
+			top: 260px;
+			left: 0%;
+		}
+		100% {
+			top: 260px;
+			left: 0%;
+		}
+	}
+</style>
+
+<script>
+	function fuckit() {
+		document.getElementById("bulin-message").innerHTML = "Fuck off";
+		setTimeout(function () { document.getElementById("bulin-message").innerHTML = " "; }, 3000);
+	}
+</script>
+
+<div class="message-fly">
+	<h2 id="bulin-message"></h2>
+</div>
+<div class="bulin-fly" onclick="fuckit()">
+	<div class="sprite-bulin"></div>
+</div>
