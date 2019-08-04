@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About
-categories: Pager
+categories: blog
 ---
 ## 去年夏天
 
