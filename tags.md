@@ -1,21 +1,10 @@
 ---
 layout: page
 title: "Tags"
-description: "估计没有用的地带"  
+description: "追番、ACG、生活、好玩的"  
 header-img: "img/semantic.jpg"  
 ---
-## tag说明
-追番
-> 每一季总结几部观感尚佳的番
 
-ACG
-> 日常碎碎念
-
-生活
-> 就是生活啦
-
-好玩的
-> 学习上的总结
 
 
 
@@ -33,7 +22,7 @@ ACG
 
 <!--  <li class="listing-seperator" id="{{ tag[0] }}">{{ tag[0] }}</li>-->
   
-    <H4 id="{{ tag[0] }}">{{ tag[0] }}</H4>
+    <H4 id="{{ tag[0] }}"><br>{{ tag[0] }}</H4>
   
 {% for post in tag[1] %}
 
@@ -58,3 +47,16 @@ $(function () {
     $('#tag_cloud a').tagcloud();
 });
 </script>
+
+## tag说明
+追番
+> 每一季总结几部观感尚佳的番
+
+ACG
+> 日常碎碎念
+
+生活
+> 就是生活啦
+
+好玩的
+> 学习上的总结
