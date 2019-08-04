@@ -13,8 +13,8 @@ owner:
   bio: "不想努力的菜鸟" # 填写作者信息：博客描述
 
 # Data
-gavatar: img/favicon.png # 浏览器地址栏小图标，可自定义更改
-favicon: img/favicon.png # 浏览器地址栏小图标，可自定义更改
+gavatar: img/favicon-32x32.png # 浏览器地址栏小图标，可自定义更改
+favicon: img/favicon-32x32.png # 浏览器地址栏小图标，可自定义更改
 
 douban_username:  # 你的豆瓣id
 twitter_username: 
@@ -44,6 +44,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      categories: "blog"
       author: "Hz" # 你的名字
       header-img: "img/green.jpg" # We don't want posts without a header image, that whould mean white on white
 
