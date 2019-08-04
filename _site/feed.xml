@@ -5,8 +5,8 @@
     <description>不想努力的菜鸟</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sun, 04 Aug 2019 12:56:04 +0800</pubDate>
-    <lastBuildDate>Sun, 04 Aug 2019 12:56:04 +0800</lastBuildDate>
+    <pubDate>Sun, 04 Aug 2019 13:40:35 +0800</pubDate>
+    <lastBuildDate>Sun, 04 Aug 2019 13:40:35 +0800</lastBuildDate>
     <generator>Jekyll v3.8.6</generator>
     
       <item>
@@ -17,8 +17,9 @@
 &lt;p&gt;首先将RGB图像转成灰度值（下图左）&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;grayScale = ( (0.3 * R) + (0.59 * G) + (0.11 * B) )
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;尝试直接用每个点的灰度值减去其左侧点的灰度值，效果并不理想（下图中）
-对灰度图像施加高斯模糊（下图右）&lt;/p&gt;
+&lt;p&gt;尝试直接用每个点的灰度值减去其左侧点的灰度值，效果并不理想（下图中）&lt;/p&gt;
+
+&lt;p&gt;对灰度图像施加高斯模糊（下图右）&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/img2019/miyuki1.png&quot; alt=&quot;1&quot; /&gt;&lt;/p&gt;
 
