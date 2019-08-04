@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "About"
-description: "不想努力的菜鸟 " 
 header-img: "img/green.jpg"
 
 ---
