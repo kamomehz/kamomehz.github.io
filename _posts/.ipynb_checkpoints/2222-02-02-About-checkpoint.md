@@ -1,8 +1,7 @@
 ---
-layout: page
-title: "About"
-header-img: "img/green.jpg"
-
+layout: post
+title: About
+categories: blog
 ---
 ## 去年夏天
 
@@ -28,6 +27,11 @@ UI使用的uikit模板，并从碧蓝航线 [***joyme.wiki***](http://wiki.joyme
 闭门造车不可取，尤其是我这种脑子不灵光的...
 
 网上的较详细教程:[***如何搭建一个独立博客——简明 GitHub Pages与 jekyll 教程***](https://www.cnfeat.com/blog/2014/05/11/how-to-build-a-blog/)
+
+
+
+
+
 
 
 
