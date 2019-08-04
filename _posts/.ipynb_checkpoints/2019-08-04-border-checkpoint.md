@@ -7,6 +7,7 @@ description: 没有。
 ---
 
 初始图像
+![0](/img2019/miyuki0.png)
 <img src="/img2019/miyuki0.pngg" width = "300" height = "424" alt="miyuki" align=center />
 
 首先将RGB图像转成灰度值（下图左）

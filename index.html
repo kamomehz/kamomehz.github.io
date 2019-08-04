@@ -2,6 +2,12 @@
 layout: page
 description: "博客页面"
 ---
+<div class="message-fly">
+	<h2 id="bulin-message"></h2>
+</div>
+<div class="bulin-fly" onclick="fuckit()">
+	<div class="sprite-bulin"></div>
+</div>
 
 {% for post in paginator.posts %}
 <div class="post-preview">
@@ -52,14 +58,14 @@ description: "博客页面"
 <style>
 	#Azur_scared {
 		bottom: 100;
-		position: fixed;
+/* 		position: fixed; */
 	}
 </style>
 
 
 <style>
 	.sprite-bulin {
-		z-index: -9;
+		z-index: 1;
 		width: 130px;
 		height: 134px;
 		background-image: url(img/bulin.png);
@@ -75,7 +81,7 @@ description: "博客页面"
 	@keyframes bulinfly {
 
 		100% {
-			background-position-x: -910px
+			background-position: -910px
 		}
 
 	}
@@ -158,9 +164,3 @@ description: "博客页面"
 	}
 </script>
 
-<div class="message-fly">
-	<h2 id="bulin-message"></h2>
-</div>
-<div class="bulin-fly" onclick="fuckit()">
-	<div class="sprite-bulin"></div>
-</div>
