@@ -1,162 +1,75 @@
----
-layout: page
-description: "不想努力的菜鸟"
----
-
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:150 }}
-        </div>
-    </a>
-    <p class="post-meta">on {{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-
-<hr>
-{% endfor %}
-
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2022.2">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 6.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li7 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e3; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none}
+    span.s3 {font: 12.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s4 {font: 14.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s5 {-webkit-text-stroke: 0px #000000}
+    span.s6 {font: 12.0px Symbol; -webkit-text-stroke: 0px #000000}
+    span.s7 {font-kerning: none; color: #000000}
+    span.s8 {text-decoration: underline ; font-kerning: none; color: #0000e3}
+    span.s9 {font: 12.0px Symbol; text-decoration: underline ; font-kerning: none; color: #0000e3}
+    span.Apple-tab-span {white-space:pre}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">--- layout: page description: "ä¸æƒ³åŠªåŠ›çš„èœé¸Ÿ" --- {% for post in paginator.posts %}</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3"><span class="s2"><a href="file:///Users/hezuo/GitPage/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D"><b>{{ post.title }}<span class="Apple-converted-space"> </span></b></a></span></h2>
+<p class="p3"><span class="s2"><a href="file:///Users/hezuo/GitPage/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D">{% if post.subtitle %}<span class="s3"></span></a></span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; color: #0000e9; -webkit-text-stroke: #0000e3"><span class="s2"><a href="file:///Users/hezuo/GitPage/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D"><b>{{ post.subtitle }}<span class="Apple-converted-space"> </span></b><span class="s4"><b></b></span></a></span></h3>
+<p class="p3"><span class="s2"><a href="file:///Users/hezuo/GitPage/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D">{% endif %}<span class="s3"></span></a></span></p>
+<p class="p3"><span class="s2"><a href="file:///Users/hezuo/GitPage/%7B%7B%20post.url%20%7C%20prepend:%20site.baseurl%20%7D%7D">{{ post.content | strip_html | truncate:150 }}<span class="Apple-converted-space"> </span><span class="s3"></span></a></span></p>
+<p class="p5"><span class="s1">on {{ post.date | date: "%B %-d, %Y" }}</span></p>
+<p class="p6"><span class="s1">&lt;?php</span></p>
+<p class="p6"><span class="s1">$inputr=range(0,1);</span></p>
+<p class="p6"><span class="s1">$inputg=range(10,11);</span></p>
+<p class="p6"><span class="s1">$inputb=range(100,101);</span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">function yCbCr(array $r,array $g,array $b){</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>$n=count($r);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>$y=[];$cb=[];$cr=[];</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>for ($i = 0; $i &lt; $n; $i++) {</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>array_push($y,.299*$r[$i] + .587*$g[$i] +.114*$b[$i]);<span class="Apple-converted-space"> </span></span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>array_push($cb,128 -.168736*$r[$i] -.331364*$g[$i] + .5*$b[$i]);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span><span class="Apple-tab-span">	</span>array_push($cr,128 +.5*$r[$i] - .418688*$g[$i] - .081312*$b[$i]);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>}</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>print_r($y);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>print_r($cb);</span></p>
+<p class="p6"><span class="s1"><span class="Apple-tab-span">	</span>print_r($cr);</span></p>
+<p class="p6"><span class="s1">}</span></p>
+<p class="p6"><span class="s1"><br>
+</span></p>
+<p class="p6"><span class="s1">yCbCr($inputr,$inputg,$inputb);</span></p>
+<p class="p6"><span class="s1">?&gt;</span></p>
+<p class="p1"><span class="s1">{% endfor %} {% if paginator.total_pages &gt; 1 %}</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s5"></span><span class="s1">{% if paginator.previous_page %}</span></li>
+  <li class="li7"><span class="s6"><a href="file:///Users/hezuo/GitPage/%7B%7B%20paginator.previous_page_path%20%7C%20prepend:%20site.baseurl%20%7C%20replace:%20'//',%20'/'%20%7D%7D"><span class="s2">←</span><span class="s3"> Newer Posts</span></a></span><span class="s7"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% endif %} {% if paginator.next_page %}</span></li>
+  <li class="li7"><span class="s5"><a href="file:///Users/hezuo/GitPage/%7B%7B%20paginator.next_page_path%20%7C%20prepend:%20site.baseurl%20%7C%20replace:%20'//',%20'/'%20%7D%7D"><span class="s8">Older Posts </span><span class="s9">→</span></a></span><span class="s7"><span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% endif %}<span class="Apple-converted-space"> </span></span></li>
 </ul>
-{% endif %}
-
-<div class="message-fly">
-    <h2 id="bulin-message"></h2>
-</div>
-<div class="bulin-fly" onclick="fuckit()">
-    <div class="sprite-bulin"></div>
-</div>
-
-<div id="Azur_scared"></div>
-
-<style>
-	#Azur_scared {
-        height: 120px;
-        width: 105px;
-		bottom: 100;
-        background-image: url('img/Azur_scared_fixed.gif');
-	}
-</style>
-
-
-<style>
-	.sprite-bulin {
-		z-index: 1;
-		width: 130px;
-		height: 134px;
-		background-image: url(img/bulin.png);
-		background-repeat: no-repeat;
-		animation-name: bulinfly;
-		animation-duration: 0.5s;
-		animation-fill-mode: forwards;
-		animation-iteration-count: infinite;
-		animation-timing-function: steps(7);
-
-	}
-
-	@keyframes bulinfly {
-
-		100% {
-			background-position: -910px
-		}
-
-	}
-
-	.bulin-fly {
-        position: absolute;
-		animation-duration: 14s;
-		animation-name: fly;
-		animation-iteration-count: infinite;
-		width: 130px;
-		height: 134px;
-		transition-timing-function: linear;
-	}
-
-	@keyframes fly {
-		0% {
-			top: -200px;
-			left: 0%;
-			transform: rotateY(180deg)
-		}
-		49% {
-			top: -200px;
-			left: 85%;
-			transform: rotateY(180deg)
-		}
-		50% {
-			top: -200px;
-			left: 85%;
-			transform: rotateY(0deg)
-		}
-		99% {
-			top: -200px;
-			left: 0%;
-			transform: rotateY(0deg)
-		}
-		100% {
-			top: -200px;
-			left: 0%;
-		}
-	}
-
-
-	.message-fly {
-		position: absolute;
-		animation-duration: 14s;
-		animation-name: fly2;
-		animation-iteration-count: infinite;
-		width: 150px;
-		transition-timing-function: linear;
-	}
-
-	@keyframes fly2 {
-		0% {
-			top: -80px;
-			left: 0%;
-		}
-		49% {
-			top: -80px;
-			left: 85%;
-		}
-		50% {
-			top: -80px;
-			left: 85%;
-		}
-		99% {
-			top: -80px;
-			left: 0%;
-		}
-		100% {
-			top: -80px;
-			left: 0%;
-		}
-	}
-</style>
-
-<script>
-	function fuckit() {
-		document.getElementById("bulin-message").innerHTML = "Fuck off";
-		setTimeout(function () { document.getElementById("bulin-message").innerHTML = " "; }, 3000);
-	}
-</script>
-
+<p class="p1"><span class="s1">{% endif %}</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s1"><br>
+</span></h2>
+<p class="p1"><span class="s1"><br>
+</span></p>
+<p class="p1"><span class="s1"><br>
+</span></p>
+</body>
+</html>
