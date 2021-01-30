@@ -10,6 +10,7 @@ About Question on Environmental Policy,
 Our Key Group ideas are to 
 -	Focus on both economic and environmental aspects and comprehensively analyze the impacts of the targets.
 -	A hybrid energy system can solve the problem of instability of solar and wind power, also maximize benefits.
+
 We consider Best energy mix are
 -	Both wind and solar energy, because there are still a large room of improvements. 
 #### 35s
